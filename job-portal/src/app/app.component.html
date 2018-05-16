@@ -1,0 +1,24 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<!-- <router-outlet></router-outlet> -->
+<div class="header">
+  <nav class="navbar navbar-default">
+    <div class="navbar-header">
+      <h1>
+        <a href="#/">Job Portal</a>
+      </h1>
+    </div>
+    <ul class="nav navbar-nav nav-pills">
+      <li routerLinkActive="active">
+        <a routerLink="/recentJobs">Job List</a>
+      </li>
+      <li routerLinkActive="active">
+        <a routerLink="/appliedJobs">Applied Job List</a>
+        </li>
+    </ul>
+  </nav>
+</div>
+<main class="container">
+        <div style="display:none;position:absolute;right:50px;top:50px;" class="alert alert-success" id="show-success">Job posted successfully</div>
+  <router-outlet></router-outlet>
+</main>
+<ngrx-store-log-monitor toggleCommand="ctrl-h" positionCommand="ctrl-m"></ngrx-store-log-monitor>

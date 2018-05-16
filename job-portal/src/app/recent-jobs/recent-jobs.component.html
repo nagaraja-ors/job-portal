@@ -1,0 +1,46 @@
+<h3>Recent Jobs</h3>
+
+<table class="table table-bordered">
+    <thead class="tble-hd">
+        <tr>
+            <th>
+                <label >Id</label>
+            </th>
+            <th>
+                <label >Title</label>
+            </th>
+            <th>
+                <label>Organisation</label>
+            </th>
+            <th>
+                <label>Description</label>
+            </th>
+            <th>
+                <label >Location</label>
+            </th>
+            <th>
+                <label >Experiance</label>
+            </th>
+            <th>
+                <label >Status </label>
+            </th>
+            <th>
+                <label >Action </label>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let job of jobs?.jobs">
+            <td>{{job._id}}</td>
+            <td>{{job.title}}</td>
+            <td >{{job.orgName}}</td>
+            <td>{{job.description }}</td>
+            <td>{{job.location }}</td>
+            <td>{{job.experience }}</td>
+            <td>{{job.isActive ? 'Open' : 'Closed' }}</td>
+            <td class="action">
+                <button (click)="showDetails(job._id)" class="btn btn-primary">Apply</button>
+            </td>
+        </tr>
+    </tbody>
+</table>

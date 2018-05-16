@@ -1,0 +1,37 @@
+<h2>
+  List of applied jobs
+</h2>
+<table class="table table-bordered">
+  <thead class="tble-hd">
+    <tr>
+      <th>
+        <label>Applied Job Id</label>
+      </th>
+      <th>
+        <label>Candidate Name</label>
+      </th>
+      <th>
+        <label>Email</label>
+      </th>
+      <th>
+        <label>Phone No</label>
+      </th>
+      <th>
+        <label>Experience</label>
+      </th>
+      <th>
+        <label>Description</label>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let job of jobs?.appliedJobs">
+      <td>{{job._id}}</td>
+      <td>{{job.name}}</td>
+      <td>{{job.email}}</td>
+      <td>{{job.phoneNo }}</td>
+      <td>{{job.description }}</td>
+      <td>{{job.experience }}</td>
+    </tr>
+  </tbody>
+</table>
