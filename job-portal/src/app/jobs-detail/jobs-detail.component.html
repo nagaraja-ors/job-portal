@@ -1,5 +1,5 @@
   <h2>
-    <b>Job Details:</b>
+    <b>Submit Your Details:</b>
   </h2>
   <div class="detail-container">
     
@@ -10,7 +10,6 @@
         <label for="name">Name</label>
         <input type="text" class="form-control" formControlName="name" />
         <div class="alert alert-danger" *ngIf="!jobForm.controls['name'].valid && jobForm.controls['name'].touched">Name is required</div>
-        <!-- <div class="alert alert-danger" [hidden]="jobForm.controls.name.pristine && jobForm.controls.name.valid">Name is required</div> -->
     </div>
     <div class="form-group">
         <label for="phoneNo">Phone No</label>
