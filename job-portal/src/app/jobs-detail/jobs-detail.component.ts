@@ -45,9 +45,9 @@ export class JobsDetailComponent implements OnInit {
     });
     this.jobForm = this.formBuilder.group({
       name: [this.model.name, Validators.required],
-      phoneNo: [this.model.phoneNo, Validators.required],
+      phoneNo: [this.model.phoneNo, [Validators.required, , Validators.pattern('^((\\+91-?)|0)?[0-9]{10}$')]],
       experience: [this.model.experience, Validators.required],
-      email: [this.model.email, [Validators.required]],//, ValidationService.emailValidator
+      email: [this.model.email, [Validators.required,Validators.pattern('^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$')]],//, ValidationService.emailValidator
       description: [this.model.description, Validators.required],
       jobId: [this.model.jobId]
     });

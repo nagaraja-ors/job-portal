@@ -14,22 +14,22 @@
     <div class="form-group">
         <label for="phoneNo">Phone No</label>
         <input type="text" class="form-control" formControlName="phoneNo" />
-        <div class="alert alert-danger" *ngIf="!jobForm.controls['phoneNo'].valid && jobForm.controls['phoneNo'].touched" >Phone No is required</div>
+        <div class="alert alert-danger" *ngIf="!jobForm.controls['phoneNo'].valid && jobForm.controls['phoneNo'].touched" >Enter valid 10 digit Phone No is required</div>
     </div>
     <div class="form-group">
         <label for="experience">Experience</label>
         <input type="text" class="form-control" formControlName="experience" />
-        <div class="alert alert-danger"  *ngIf="!jobForm.controls['experience'].valid && jobForm.controls['experience'].touched">Expereince is required and must be a valid email pattern</div>
+        <div class="alert alert-danger"  *ngIf="!jobForm.controls['experience'].valid && jobForm.controls['experience'].touched">Enter Your Valid Experience</div>
     </div>
     <div class="form-group">
         <label for="power">Email</label>
         <input type="email" class="form-control" formControlName="email" />
-        <div class="alert alert-danger" *ngIf="!jobForm.controls['email'].valid && jobForm.controls['email'].touched">Email is required</div>
+        <div class="alert alert-danger" *ngIf="!jobForm.controls['email'].valid && jobForm.controls['email'].touched">Enter Vaild Email id is required</div>
     </div>
     <div class="form-group">
         <label for="description">Description</label>
         <input type="text" class="form-control" formControlName="description" />
-        <div class="alert alert-danger" *ngIf="!jobForm.controls['description'].valid && jobForm.controls['description'].touched">Description is required</div>
+        <div class="alert alert-danger" *ngIf="!jobForm.controls['description'].valid && jobForm.controls['description'].touched">Enter your details in description</div>
     </div>
     <button type="submit" class="btn btn-primary" [disabled]="jobForm.invalid">Apply</button> 
 </form>
